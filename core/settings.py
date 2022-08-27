@@ -5,9 +5,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-7ufxygn*4q2e5x61)0p6$us&ut3)7oc7fq)ng(gzq)^k-$*@wt'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['limitless-beyond-90011.herokuapp.com']
 
 # Application definition
 
@@ -64,19 +64,19 @@ DATABASES = {
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME':
-            'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
         'NAME':
-            'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
         'NAME':
-            'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
         'NAME':
-            'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
 
